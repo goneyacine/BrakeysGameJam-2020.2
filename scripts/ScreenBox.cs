@@ -17,7 +17,7 @@ public class ScreenBox : MonoBehaviour
 //draw the box collider as gizmos
   private void OnDrawGizmos()
    { 
-      Gizmos.color = Color.blue;
+      Gizmos.color = Color.red;
       Gizmos.DrawWireCube((Vector2)transform.position + collider2D.offset,collider2D.size);
    }
  private void OnTriggerEnter2D(Collider2D other) {

@@ -15,5 +15,9 @@ public class Movements : MonoBehaviour
     {
         float moveInputValue = Input.GetAxis("Horizontal");
         rb.velocity = new Vector2(moveInputValue * speed * Time.deltaTime,rb.velocity.y);
+        if(moveInputValue > 0)
+        transform.eulerAngles = Vector2.zero;
+        else if (moveInputValue < 0)
+        transform.eulerAngles = Vector2.up * 180;
     }
 }
