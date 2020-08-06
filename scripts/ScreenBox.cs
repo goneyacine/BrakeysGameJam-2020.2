@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
+
 [ExecuteInEditMode]
 public class ScreenBox : MonoBehaviour
 {
